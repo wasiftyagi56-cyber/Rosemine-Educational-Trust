@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Career Counselling — Rosemine Educational & Charitable Trust</title>
+    <meta name="description"
+        content="Class 10 & 12 ke baad apna career sahi direction mein le jaaye. Free counselling aur scholarship support." />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        :root {
+            --blue: #1a3a8f;
+            --blue2: #2451c4;
+            --blue3: #1e45b0;
+            --blue-dark: #0d2260;
+            --blue-pale: #eef2fc;
+            --blue-light: #dce6ff;
+            --gold: #c9960c;
+            --gold2: #e8b020;
+            --gold3: #f5cc50;
+            --gold-pale: #fdf8e8;
+            --gold-light: #faefc8;
+            --white: #ffffff;
+            --off: #f9fafd;
+            --text: #12213a;
+            --muted: #5a6a88;
+            --border: #d4dcf0;
+            --error: #c0392b
+        }
+
+        html { scroll-behavior: smooth }
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background: #f0f4ff;
+            min-height: 100vh;
+            padding-bottom: 60px
+        }
+
+        .top-strip {
+            height: 8px;
+            background: linear-gradient(90deg, #ff9933 0%, #ff9933 33.3%, #fff 33.3%, #fff 66.6%, #138808 66.6%, #138808 100%)
+        }
+
+        .rosemine-header {
+            background: linear-gradient(160deg, #001040 0%, #001f5b 30%, #003399 65%, #001f5b 100%);
+            padding: 0;
+            position: relative;
+            overflow: hidden
+        }
+
+        .rosemine-header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle at 80% 30%, rgba(255, 215, 0, .12) 0%, transparent 45%), radial-gradient(circle at 15% 70%, rgba(255, 215, 0, .07) 0%, transparent 40%);
+            pointer-events: none
+        }
+
+        .header-wave {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 46px;
+            background: linear-gradient(135deg, transparent 49.5%, #f0f4ff 50%)
+        }
+
+        .rh-inner {
+            max-width: 880px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            padding: 32px 24px 56px
+        }
+
+        .rh-topbar {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 215, 0, .2);
+            flex-wrap: wrap
+        }
+
+        .rh-logo-circle {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #cc0000, #ff4444);
+            border: 2.5px solid rgba(255, 215, 0, .6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            flex-shrink: 0;
+            box-shadow: 0 6px 20px rgba(204, 0, 0, .45);
+            animation: float 5s ease-in-out infinite
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) }
+            50% { transform: translateY(-6px) }
+        }
+
+        .rh-brand { flex: 1 }
+
+        .rh-brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+            font-weight: 900;
+            color: #fff;
+            letter-spacing: .3px;
+            line-height: 1.2
+        }
+
+        .rh-brand-name span { color: #ffd700 }
+
+        .rh-brand-tag {
+            font-size: .63rem;
+            color: rgba(255, 255, 255, .5);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: 4px
+        }
+
+        .rh-hero { text-align: center; margin: 8px 0 18px }
+
+        .rh-hero .tagline {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            color: rgba(255, 255, 255, .85);
+            font-weight: 600;
+            margin-bottom: 4px
+        }
+
+        .rh-hero .headline {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            font-size: clamp(1.6rem, 6vw, 2.4rem);
+            font-weight: 900;
+            color: #ffd700;
+            text-shadow: 0 3px 16px rgba(255, 215, 0, .35);
+            line-height: 1.1;
+            margin-bottom: 6px
+        }
+
+        .rh-hero .sub-headline {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3.5vw, 1.4rem);
+            font-weight: 700;
+            color: rgba(255, 255, 255, .9);
+            margin-bottom: 16px
+        }
+
+        .award-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 215, 0, .15);
+            border: 1.5px solid rgba(255, 215, 0, .4);
+            border-radius: 50px;
+            padding: 8px 20px;
+            font-size: .82rem;
+            font-weight: 700;
+            color: #ffd700;
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            margin-bottom: 6px
+        }
+
+        .rh-address-box {
+            background: rgba(255, 255, 255, .07);
+            border: 1px solid rgba(255, 215, 0, .22);
+            border-radius: 12px;
+            padding: 14px 20px;
+            margin-top: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            align-items: flex-start;
+            justify-content: center
+        }
+
+        .rh-addr-item { display: flex; align-items: flex-start; gap: 8px; font-family: 'Noto Sans Devanagari', sans-serif }
+        .rh-addr-item .icon { font-size: 1rem; flex-shrink: 0; margin-top: 2px }
+        .rh-addr-item .label { font-size: .6rem; color: rgba(255, 215, 0, .7); letter-spacing: 1px; text-transform: uppercase; font-weight: 700; font-family: 'Inter', sans-serif }
+        .rh-addr-item .value { font-size: .8rem; color: rgba(255, 255, 255, .9); font-weight: 600; line-height: 1.4 }
+        .rh-addr-item a { color: #ffd700; text-decoration: none; font-weight: 800 }
+        .rh-divider { width: 60px; height: 1px; background: rgba(255, 215, 0, .25); align-self: stretch; margin: auto 0 }
+
+        .rh-help {
+            background: rgba(37, 211, 102, .12);
+            border: 1px solid rgba(37, 211, 102, .3);
+            border-radius: 10px;
+            padding: 10px 16px;
+            text-align: center;
+            margin-top: 14px
+        }
+
+        .rh-help p { font-size: .76rem; color: rgba(255, 255, 255, .82); font-family: 'Noto Sans Devanagari', sans-serif; line-height: 1.6 }
+        .rh-help a { color: #6bffaa; font-weight: 800; text-decoration: none; font-size: .9rem }
+
+        .see-more-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 14px;
+            padding: 8px 20px;
+            background: rgba(255, 215, 0, .1);
+            border: 1px solid rgba(255, 215, 0, .3);
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: .74rem;
+            font-weight: 700;
+            color: #ffd700;
+            letter-spacing: .5px;
+            transition: all .25s;
+            font-family: 'Inter', sans-serif;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .see-more-toggle:hover { background: rgba(255, 215, 0, .18) }
+        .see-more-toggle .arrow { transition: transform .3s; display: inline-block }
+        .see-more-toggle.open .arrow { transform: rotate(180deg) }
+
+        .see-more-content {
+            display: none;
+            margin-top: 14px;
+            background: rgba(255, 255, 255, .05);
+            border: 1px solid rgba(255, 215, 0, .15);
+            border-radius: 12px;
+            padding: 18px 20px
+        }
+
+        .see-more-content.show { display: block }
+        .smc-title { font-size: .95rem; font-weight: 800; color: #ffd700; font-family: 'Noto Sans Devanagari', sans-serif; margin-bottom: 12px; text-align: center }
+        .smc-list { list-style: none; margin-bottom: 14px }
+        .smc-list li { font-size: .8rem; color: rgba(255, 255, 255, .88); font-family: 'Noto Sans Devanagari', sans-serif; padding: 4px 0; line-height: 1.6 }
+        .smc-steps { background: rgba(255, 215, 0, .08); border-radius: 10px; padding: 14px 16px; margin: 10px 0 }
+        .smc-steps-title { font-size: .8rem; font-weight: 700; color: #ffd700; font-family: 'Noto Sans Devanagari', sans-serif; margin-bottom: 10px }
+        .smc-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px }
+        .smc-step-num { background: #ffd700; color: #001f5b; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .68rem; font-weight: 800; flex-shrink: 0 }
+        .smc-step p { font-size: .78rem; color: rgba(255, 255, 255, .85); font-family: 'Noto Sans Devanagari', sans-serif; line-height: 1.5 }
+        .smc-footer { text-align: center; margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(255, 215, 0, .15) }
+        .smc-footer p { font-size: .75rem; color: rgba(255, 255, 255, .7); font-family: 'Noto Sans Devanagari', sans-serif; line-height: 1.6 }
+        .smc-footer strong { color: #ffd700 }
+
+        .gold-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold2), var(--gold3), var(--gold2), transparent);
+            max-width: 880px;
+            margin: 0 auto;
+            opacity: .5;
+            position: relative;
+            z-index: 2
+        }
+
+        .body-wrap { max-width: 880px; margin: 0 auto; padding: 0 16px }
+
+        .class-tabs { display: flex; gap: 12px; margin: 20px 0 0 }
+
+        .class-tab {
+            flex: 1;
+            padding: 14px 20px;
+            border: 2px solid var(--border);
+            border-radius: 14px;
+            background: #fff;
+            cursor: pointer;
+            text-align: center;
+            transition: all .25s;
+            font-family: 'Noto Sans Devanagari', 'Inter', sans-serif
+        }
+
+        .class-tab .ct-num { font-size: 1.4rem; font-weight: 900; color: #b0bcd8; transition: color .25s }
+        .class-tab .ct-label { font-size: .72rem; color: var(--muted); font-weight: 600; margin-top: 2px }
+        .class-tab.active { border-color: var(--gold2); background: linear-gradient(135deg, #fdf8e8, #fff8e1); box-shadow: 0 4px 20px rgba(201, 150, 12, .18) }
+        .class-tab.active .ct-num { color: var(--gold) }
+        .class-tab.active .ct-label { color: var(--blue) }
+
+        .elig-banner {
+            background: linear-gradient(135deg, #fff, #f8faff);
+            border: 1.5px solid #d4dcf0;
+            border-left: 5px solid var(--blue2);
+            border-radius: 14px;
+            padding: 18px 24px;
+            margin: 14px 0 0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            box-shadow: 0 4px 20px rgba(26, 58, 143, .08)
+        }
+
+        .elig-banner .ico { font-size: 2rem; flex-shrink: 0 }
+        .elig-banner .text strong { font-size: .85rem; font-weight: 700; color: var(--blue) }
+        .elig-banner .text p { font-size: .78rem; color: var(--muted); margin-top: 5px; line-height: 1.7 }
+
+        .card {
+            background: #fff;
+            border-radius: 0 0 24px 24px;
+            box-shadow: 0 12px 48px rgba(26, 58, 143, .13);
+            overflow: hidden;
+            animation: upIn .55s cubic-bezier(.22, 1, .36, 1) both;
+            margin-top: 18px
+        }
+
+        @keyframes upIn {
+            from { opacity: 0; transform: translateY(20px) }
+            to { opacity: 1; transform: translateY(0) }
+        }
+
+        .prog-bar { height: 5px; background: #e8eef8 }
+        .prog-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--blue2), var(--blue), var(--gold2), var(--gold3)); transition: width .4s ease; border-radius: 0 2px 2px 0 }
+
+        .steps {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            padding: 16px 28px;
+            background: linear-gradient(135deg, #f2f5fc, #f8faff);
+            border-bottom: 1px solid var(--border);
+            flex-wrap: wrap
+        }
+
+        .st { display: flex; align-items: center; gap: 7px; font-size: .7rem; font-weight: 600; color: #94a3b8 }
+        .st.active { color: var(--blue) }
+        .st.done { color: var(--blue2) }
+
+        .st-dot {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .65rem;
+            font-weight: 700;
+            background: #e4eaf8;
+            color: #94a3b8;
+            flex-shrink: 0;
+            transition: all .3s
+        }
+
+        .st.done .st-dot { background: var(--blue-light); color: var(--blue2) }
+        .st.active .st-dot { background: linear-gradient(135deg, var(--blue), var(--blue2)); color: #fff; box-shadow: 0 0 0 3px rgba(26, 58, 143, .18) }
+
+        .stl { width: 36px; height: 2px; background: #dde4f4; flex-shrink: 0; transition: background .3s }
+        .stl.done { background: var(--blue2) }
+
+        .sec { padding: 32px 40px; border-bottom: 1px solid #edf1fb }
+        .sec:nth-child(odd) { background: #ffffff }
+        .sec:nth-child(even) { background: linear-gradient(135deg, #f6f8ff, #f9fafb) }
+        .sec:last-of-type { border: none }
+
+        .sec-head { display: flex; align-items: center; gap: 14px; margin-bottom: 26px }
+        .sec-ico { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0 }
+        .ico-blue { background: linear-gradient(135deg, var(--blue-dark), var(--blue2)); box-shadow: 0 6px 20px rgba(26, 58, 143, .4) }
+        .ico-gold { background: linear-gradient(135deg, #7a5500, var(--gold2)); box-shadow: 0 6px 20px rgba(201, 150, 12, .4) }
+        .ico-navy { background: linear-gradient(135deg, #08143a, #1a3a8f); box-shadow: 0 6px 20px rgba(8, 20, 58, .5) }
+
+        .sec-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--blue) }
+        .sec-sub { font-size: .7rem; color: var(--muted); margin-top: 3px }
+
+        .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px }
+        .s2 { grid-column: span 2 }
+        .fld { display: flex; flex-direction: column; gap: 6px }
+
+        .lbl { font-size: .76rem; font-weight: 700; color: var(--blue-dark); letter-spacing: .3px; display: flex; align-items: center; gap: 5px }
+        .lbl .req { color: var(--error); font-size: .9rem }
+
+        .iw { position: relative }
+        .iw .ii { position: absolute; left: 13px; top: 50%; transform: translateY(-50%); font-size: .9rem; opacity: .35; pointer-events: none; z-index: 1 }
+        .iw.ta .ii { top: 13px; transform: none }
+        .iw input, .iw select, .iw textarea { padding-left: 38px !important }
+
+        input[type=text], input[type=tel], input[type=date], input[type=number], select, textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1.5px solid #c8d4ee;
+            border-radius: 10px;
+            font-size: .9rem;
+            color: var(--text);
+            background: #f8faff;
+            font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
+            transition: all .22s;
+            outline: none
+        }
+
+        input::placeholder, textarea::placeholder { color: #9aaac8; font-size: .82rem }
+        input:focus, select:focus, textarea:focus { border-color: var(--gold2); background: #fff; box-shadow: 0 0 0 4px rgba(201, 150, 12, .12) }
+        textarea { resize: vertical; min-height: 80px }
+
+        .radio-group { display: flex; flex-wrap: wrap; gap: 8px }
+        .radio-btn { display: flex; align-items: center; gap: 8px; padding: 9px 16px; border: 1.5px solid #ccd5ee; border-radius: 10px; cursor: pointer; font-family: 'Noto Sans Devanagari', 'Inter', sans-serif; font-size: .84rem; color: var(--text); background: var(--off); transition: all .2s; user-select: none }
+        .radio-btn input { display: none }
+        .radio-btn:hover { border-color: var(--gold2); background: var(--gold-pale) }
+        .radio-btn.selected { border-color: var(--gold2); background: var(--gold-light); color: var(--gold); font-weight: 700; box-shadow: 0 2px 8px rgba(201, 150, 12, .2) }
+        .radio-btn .dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #b0bcd8; flex-shrink: 0; transition: all .2s; display: flex; align-items: center; justify-content: center }
+        .radio-btn.selected .dot { border-color: var(--gold2); background: var(--gold2) }
+        .radio-btn.selected .dot::after { content: ''; width: 5px; height: 5px; border-radius: 50%; background: #fff; display: block }
+
+        .marks-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px }
+
+        .marks-result { background: linear-gradient(135deg, #eef2fc, #fdf8e8); border: 1.5px solid var(--gold2); border-radius: 12px; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; min-height: 48px }
+        .marks-result .pct-label { font-size: .67rem; color: var(--muted); margin-bottom: 2px }
+        .marks-result .pct-val { font-size: 1.35rem; font-weight: 700; color: var(--blue) }
+        .marks-result.good .pct-val { color: #16a34a }
+        .marks-result.fail .pct-val { color: var(--error) }
+
+        .cls12-field { display: none }
+        .cls12-field.show { display: flex }
+
+        .uzone { border: 2px dashed #c0ccee; border-radius: 14px; background: linear-gradient(135deg, #f5f8ff, #fafbff); padding: 28px 16px; text-align: center; cursor: pointer; transition: all .25s; position: relative; overflow: hidden }
+        .uzone:hover { border-color: var(--gold2); background: linear-gradient(135deg, #fdf8e8, #fffdf0) }
+        .uzone input[type=file] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100% }
+        .uzone .u-ico { font-size: 2.2rem; display: block; margin-bottom: 8px }
+        .uzone .u-title { font-size: .86rem; font-weight: 700; color: var(--blue); margin-bottom: 5px }
+        .uzone .u-sub { font-size: .7rem; color: var(--muted) }
+        .uzone .u-sub span { background: var(--blue); color: #fff; padding: 1px 7px; border-radius: 3px; font-size: .62rem; margin: 0 2px }
+
+        .prev-box { display: none; justify-content: center; gap: 14px; margin-top: 14px; align-items: flex-start }
+        .prev-box img { width: 80px; height: 100px; object-fit: cover; border-radius: 8px; border: 3px solid var(--blue2) }
+        .prev-info { text-align: left; padding-top: 6px }
+        .prev-info .pname { font-size: .77rem; font-weight: 700; color: var(--blue); word-break: break-all }
+        .prev-info .psize { font-size: .67rem; color: var(--muted); margin-top: 2px }
+        .prev-info .pok { display: inline-flex; align-items: center; gap: 3px; margin-top: 5px; background: #dce6ff; color: var(--blue2); font-size: .67rem; font-weight: 700; padding: 2px 9px; border-radius: 50px }
+
+        .decl { background: linear-gradient(135deg, #eef2fc, #fdf8e8); border: 1px solid var(--border); border-left: 5px solid var(--gold2); border-radius: 12px; padding: 20px 24px; margin-bottom: 22px }
+        .decl-head { display: flex; align-items: center; gap: 7px; font-family: 'Playfair Display', serif; font-size: .85rem; font-weight: 700; color: var(--blue); margin-bottom: 10px }
+        .decl p { font-size: .8rem; color: #2a3560; line-height: 1.9 }
+
+        .chk-row { display: flex; align-items: flex-start; gap: 12px }
+        .chk-row input[type=checkbox] { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--blue2); cursor: pointer; flex-shrink: 0 }
+        .chk-row label { font-size: .82rem; color: #2a3560; line-height: 1.75; cursor: pointer; font-family: 'Noto Sans Devanagari', sans-serif }
+
+        .sub-area { background: linear-gradient(155deg, #08143a 0%, #1a3a8f 50%, #0d2260 100%); padding: 36px 40px; text-align: center; position: relative; overflow: hidden }
+        .sub-area::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(232, 176, 32, .15), transparent 65%); pointer-events: none }
+
+        .btn-sub { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 17px 60px; background: linear-gradient(135deg, #7a5500, var(--gold), var(--gold2), var(--gold3)); color: #12213a; border: none; border-radius: 50px; font-size: 1rem; font-weight: 800; cursor: pointer; box-shadow: 0 6px 28px rgba(201, 150, 12, .55); transition: all .25s; position: relative; z-index: 1; font-family: 'Noto Sans Devanagari', 'Inter', sans-serif }
+        .btn-sub:hover { transform: translateY(-3px); box-shadow: 0 10px 36px rgba(201, 150, 12, .65) }
+        .btn-sub .arr { transition: transform .2s }
+        .btn-sub:hover .arr { transform: translateX(4px) }
+        .sub-note { margin-top: 12px; font-size: .68rem; color: rgba(255, 255, 255, .3) }
+
+        .pg-footer { max-width: 880px; margin: 20px auto 0; padding: 0 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap }
+        .ft-left { font-size: .64rem; color: rgba(0, 0, 0, .3) }
+        .ft-right { display: flex; gap: 4px }
+        .fc { width: 28px; height: 4px; border-radius: 3px }
+
+        .modal { display: none; position: fixed; inset: 0; background: rgba(8, 20, 58, .88); backdrop-filter: blur(12px); z-index: 999; align-items: center; justify-content: center }
+        .modal.show { display: flex }
+
+        .mbox { background: #fff; border-radius: 20px; padding: 48px 40px 38px; text-align: center; max-width: 420px; width: 90%; animation: pop .4s cubic-bezier(.34, 1.56, .64, 1) both; position: relative; overflow: hidden }
+        @keyframes pop { from { transform: scale(.5); opacity: 0 } to { transform: scale(1); opacity: 1 } }
+        .mbox::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, var(--blue) 40%, var(--gold2) 100%) }
+
+        .m-ico { font-size: 3.5rem; display: block; margin-bottom: 14px }
+        .m-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 900; color: var(--blue); margin-bottom: 8px }
+        .m-msg { font-size: .8rem; color: var(--muted); line-height: 1.8 }
+        .m-ref { display: inline-block; margin: 14px 0; background: var(--gold-pale); border: 1px solid rgba(201, 150, 12, .3); border-radius: 7px; padding: 7px 18px; font-size: .72rem; font-weight: 700; color: #6b4a00; letter-spacing: .8px }
+
+        .m-close { margin-top: 4px; padding: 12px 36px; background: linear-gradient(135deg, var(--blue), var(--blue2)); color: #fff; border: none; border-radius: 50px; cursor: pointer; font-size: .84rem; font-weight: 700; box-shadow: 0 4px 14px rgba(26, 58, 143, .3); transition: all .2s }
+        .m-close:hover { transform: translateY(-2px) }
+
+        /* ====== WhatsApp Button ====== */
+        .wa-btn-style {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #25D366;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 14px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 16px rgba(37, 211, 102, .35);
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
+            transition: all .2s
+        }
+        .wa-btn-style:hover { background: #1ebe5d; transform: translateY(-2px) }
+        .wa-btn-style:active { transform: translateY(0) }
+
+        /* ===== DONATION SECTION ===== */
+        .donation-sec { background: linear-gradient(135deg, #f0fff4, #f8fff5) !important; border-top: 3px solid #138808 }
+
+        .donate-msg-box {
+            display: flex; align-items: flex-start; gap: 14px;
+            background: linear-gradient(135deg, #e8f5e9, #fff8e1);
+            border: 1.5px solid #a5d6a7; border-radius: 14px;
+            padding: 18px 20px; margin-bottom: 24px
+        }
+        .donate-msg-icon { font-size: 1.8rem; flex-shrink: 0 }
+        .donate-msg-text { font-size: .84rem; color: #1b5e20; line-height: 1.7; font-family: 'Noto Sans Devanagari', sans-serif }
+
+        .donate-layout { display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap }
+
+        /* Left photos */
+        .donate-photos { flex: 1; min-width: 220px }
+        .dp-label { font-size: .75rem; font-weight: 800; color: #0a6e00; letter-spacing: .5px; margin-bottom: 10px; text-transform: uppercase }
+
+        .dp-scroll { overflow-x: auto; padding-bottom: 8px }
+        .dp-scroll::-webkit-scrollbar { height: 3px }
+        .dp-scroll::-webkit-scrollbar-thumb { background: #a5d6a7; border-radius: 2px }
+        .dp-scroll-inner { display: flex; gap: 10px; width: max-content }
+
+        .dps-card-photo {
+            width: 140px; height: 110px; border-radius: 12px;
+            flex-shrink: 0; position: relative; overflow: hidden;
+            box-shadow: 0 4px 14px rgba(0,0,0,.25);
+            cursor: pointer;
+        }
+        .dps-card-photo:hover .dps-photo-img { transform: scale(1.07) }
+        .dps-photo-img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform .3s ease; display: block;
+        }
+        .dps-photo-overlay {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,.78), transparent);
+            color: #fff; font-size: .62rem; font-weight: 700;
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            padding: 18px 7px 6px; text-align: center; line-height: 1.3;
+        }
+
+        /* Right QR */
+        .donate-qr-box {
+            flex-shrink: 0; width: 220px;
+            background: #fff; border-radius: 16px;
+            border: 2px solid #138808;
+            box-shadow: 0 8px 28px rgba(19,136,8,.18);
+            padding: 16px 14px; text-align: center
+        }
+        .dqr-title { font-size: .8rem; font-weight: 800; color: #0a6e00; margin-bottom: 8px }
+        .dqr-brands { display: flex; gap: 6px; justify-content: center; margin-bottom: 10px; flex-wrap: wrap }
+        .dqr-brand { font-size: .58rem; font-weight: 800; padding: 2px 8px; border-radius: 50px }
+        .dqr-brand.mp { background: #eb001b; color: #fff }
+        .dqr-brand.rp { background: #005f9e; color: #fff }
+        .dqr-brand.vi { background: #1a1f71; color: #fff }
+
+        .dqr-wrap { border: 1.5px solid #ddd; border-radius: 10px; padding: 10px; margin-bottom: 10px }
+        .dqr-header-bar { font-size: .8rem; font-weight: 700; margin-bottom: 8px }
+        .dqr-img-wrap { display: flex; align-items: center; justify-content: center; margin-bottom: 8px }
+        .dqr-img { width: 160px; height: 160px; object-fit: contain; border: 1px solid #eee; border-radius: 6px }
+        .dqr-name { font-size: .62rem; font-weight: 700; color: #333; margin-bottom: 5px }
+        .dqr-ids { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 4px }
+        .dqr-ids span { font-size: .55rem; color: #666; background: #f5f5f5; padding: 2px 6px; border-radius: 4px }
+        .dqr-help { font-size: .56rem; color: #888; margin-bottom: 5px }
+        .dqr-bank { font-size: .7rem; font-weight: 700; color: #333; border-top: 1px solid #eee; padding-top: 6px }
+
+        .dqr-note { font-size: .78rem; font-weight: 800; color: #138808; margin-bottom: 4px; font-family: 'Noto Sans Devanagari', sans-serif }
+        .dqr-optional { font-size: .65rem; color: #888; font-style: italic }
+
+        /* Amount buttons */
+        .amt-row { margin-bottom: 22px }
+        .amt-label { font-size: .72rem; font-weight: 700; color: #0a6e00; margin-bottom: 10px; text-transform: uppercase; letter-spacing: .4px }
+        .amt-btns { display: flex; gap: 12px }
+        .amt-btn {
+            flex: 1; border: 2px solid #a5d6a7; border-radius: 14px;
+            padding: 12px 8px; text-align: center; cursor: pointer;
+            background: #fff; transition: all .2s;
+        }
+        .amt-btn:hover { border-color: #138808; background: #f0fff4; transform: translateY(-2px); box-shadow: 0 6px 18px rgba(19,136,8,.15) }
+        .amt-btn.selected { border-color: #138808; background: linear-gradient(135deg,#138808,#1aaa10); box-shadow: 0 6px 18px rgba(19,136,8,.3) }
+        .amt-btn.selected .amt-num { color: #fff }
+        .amt-btn.selected .amt-sub { color: rgba(255,255,255,.85) }
+        .amt-num { font-size: 1.3rem; font-weight: 900; color: #138808; font-family: 'Noto Sans Devanagari', sans-serif }
+        .amt-sub { font-size: .6rem; color: #666; margin-top: 2px; font-family: 'Noto Sans Devanagari', sans-serif }
+
+        @media(max-width:600px) {
+            .rh-topbar { flex-direction: column; text-align: center }
+            .sec { padding: 22px 16px }
+            .g2, .marks-row { grid-template-columns: 1fr }
+            .s2 { grid-column: span 1 }
+            .sub-area { padding: 24px 16px }
+            .steps { padding: 14px 12px }
+            .stl { width: 18px }
+            .st span { display: none }
+            .btn-sub { padding: 14px 28px; font-size: .9rem }
+            .elig-banner { flex-direction: column; text-align: center }
+            .rh-address-box { flex-direction: column; align-items: flex-start }
+            .rh-divider { display: none }
+            .class-tabs { flex-direction: column }
+            .donate-layout { flex-direction: column }
+            .donate-qr-box { width: 100% }
+            .donate-photos { width: 100% }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-strip"></div>
+    <div class="rosemine-header">
+        <div class="rh-inner">
+            <div class="rh-topbar">
+                <div class="rh-logo-circle">🌹</div>
+                <div class="rh-brand">
+                    <div class="rh-brand-name"><span>Rosemine</span>® Educational & Charitable Trust</div>
+                    <div class="rh-brand-tag">We Have A Dream to Educate You · ESTD. 2005</div>
+                </div>
+            </div>
+            <div class="rh-hero">
+                <div class="tagline">बच्चों पढ़ाई आप करें</div>
+                <div class="headline">फीस हम भरेंगे</div>
+                <div class="sub-headline">Rosemine Educational Trust</div>
+                <div class="award-badge">🎓 Education Career Counselling — Class 10 & 12</div>
+            </div>
+            <div class="rh-address-box">
+                <div class="rh-addr-item">
+                    <div class="icon">📍</div>
+                    <div>
+                        <div class="label">पता — Address</div>
+                        <div class="value">शामली बस स्टैंड, काली नदी के पास<br />मुजफ्फरनगर, उत्तर प्रदेश</div>
+                    </div>
+                </div>
+                <div class="rh-divider"></div>
+                <div class="rh-addr-item">
+                    <div class="icon">📞</div>
+                    <div>
+                        <div class="label">सम्पर्क — Contact</div>
+                        <div class="value"><a href="tel:+917906861189">+91 79068 61189</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rh-help">
+                <p>यदि फार्म भरने में समस्या आती है तो इस नंबर पर सम्पर्क करें &nbsp;
+                    <a href="tel:+917906861189">📞 +91 79068 61189</a>
+                </p>
+            </div>
+            <div class="see-more-toggle" id="seeMoreBtn" onclick="toggleSeeMore()">
+                और जानें <span class="arrow">▼</span>
+            </div>
+            <div class="see-more-content" id="seeMoreContent">
+                <div class="smc-title">🎓 बच्चों की पढ़ाई की चिंता खत्म!</div>
+                <p style="text-align:center;color:rgba(255,255,255,.75);font-size:.8rem;font-family:'Noto Sans Devanagari',sans-serif;margin-bottom:12px;">
+                    Admission + Career Counselling एक ही जगह 👇</p>
+                <ul class="smc-list">
+                    <li>✅ Class 10 & 12 दोनों के लिए Counselling Support</li>
+                    <li>✅ सभी बच्चों के लिए 100% Admission Support</li>
+                    <li>✅ गरीब हो या अमीर – हर बच्चे को पढ़ने का अधिकार</li>
+                    <li>✅ टॉप कॉलेजों में एडमिशन में मदद</li>
+                    <li>✅ Career Guidance + Life Skills Support</li>
+                </ul>
+                <div class="smc-steps">
+                    <div class="smc-steps-title">📝 रजिस्ट्रेशन कैसे करें?</div>
+                    <div class="smc-step"><div class="smc-step-num">1</div><p>नीचे दिए नंबर पर Call / WhatsApp करें</p></div>
+                    <div class="smc-step"><div class="smc-step-num">2</div><p>अपनी बेसिक जानकारी भेजें</p></div>
+                    <div class="smc-step"><div class="smc-step-num">3</div><p>काउंसलिंग और प्रोफाइल वेरिफिकेशन होगा</p></div>
+                    <div class="smc-step"><div class="smc-step-num">4</div><p>आपको सही कॉलेज में एडमिशन दिलाया जाएगा</p></div>
+                </div>
+                <ul class="smc-list" style="margin-top:10px;">
+                    <li>🚫 कोई डोनेशन नहीं</li>
+                    <li>🚫 कोई छुपी हुई फीस नहीं</li>
+                </ul>
+                <div class="smc-footer">
+                    <p>🔥 सीट लिमिटेड हैं – जल्दी रजिस्ट्रेशन करें</p>
+                    <p style="margin-top:4px;">50 प्रतिशत से ऊपर विद्यार्थियों के लिए सम्मानित समारोह किया जा रहा है।</p>
+                    <p style="margin-top:8px;font-size:.72rem;color:rgba(255,215,0,.7);">👉 आज का स्टूडेंट ही कल का लीडर बनेगा!</p>
+                </div>
+            </div>
+        </div>
+        <div class="gold-divider"></div>
+        <div class="header-wave"></div>
+    </div>
+
+    <div class="body-wrap">
+        <div class="class-tabs">
+            <div class="class-tab active" id="tab10" onclick="switchClass(10)">
+                <div class="ct-num">10वीं</div>
+                <div class="ct-label">Class 10 · Matric</div>
+            </div>
+            <div class="class-tab" id="tab12" onclick="switchClass(12)">
+                <div class="ct-num">12वीं</div>
+                <div class="ct-label">Class 12 · Intermediate</div>
+            </div>
+            <div class="class-tab" id="tabUG" onclick="switchClass('UG')">
+                <div class="ct-num">UG</div>
+                <div class="ct-label">Under Graduate</div>
+            </div>
+        </div>
+
+        <div class="elig-banner">
+            <div class="ico">📢</div>
+            <div class="text" id="eligText">
+                <strong>पात्रता — Eligibility Criteria</strong>
+                <p>मुजफ्फरनगर जिले के किसी भी गाँव या कस्बे के वे छात्र जिन्होंने <strong>Class 10 (Matric)</strong> या
+                    <strong>Class 12 (Intermediate)</strong> में <strong>50% या उससे अधिक अंक</strong> प्राप्त किए हैं,
+                    वे इस Education Career Counselling के लिए आवेदन कर सकते हैं।</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="prog-bar"><div class="prog-fill" id="pf"></div></div>
+            <div class="steps">
+                <div class="st active" id="st1"><div class="st-dot">1</div><span>छात्र जानकारी</span></div>
+                <div class="stl" id="sl1"></div>
+                <div class="st" id="st2"><div class="st-dot">2</div><span>अभिभावक</span></div>
+                <div class="stl" id="sl2"></div>
+                <div class="st" id="st3"><div class="st-dot">3</div><span>शिक्षा व अंक</span></div>
+                <div class="stl" id="sl3"></div>
+                <div class="st" id="st4"><div class="st-dot">4</div><span>घोषणा</span></div>
+            </div>
+
+            <!-- SEC 1 -->
+            <div class="sec">
+                <div class="sec-head">
+                    <div class="sec-ico ico-blue">👤</div>
+                    <div>
+                        <div class="sec-title">छात्र की व्यक्तिगत जानकारी</div>
+                        <div class="sec-sub">Student Personal Information</div>
+                    </div>
+                </div>
+                <div class="g2">
+                    <div class="fld">
+                        <label class="lbl">छात्र का पूरा नाम <span class="req">*</span></label>
+                        <div class="iw"><span class="ii">✍️</span><input type="text" id="naam" placeholder="अपना पूरा नाम लिखें" oninput="prog()" /></div>
+                    </div>
+                    <div class="fld">
+                        <label class="lbl">जन्म तिथि <span class="req">*</span></label>
+                        <div class="iw"><span class="ii">📅</span><input type="date" id="dob" max="2010-01-01" oninput="prog()" /></div>
+                    </div>
+                    <div class="fld">
+                        <label class="lbl">मोबाइल नंबर <span class="req">*</span></label>
+                        <div class="iw"><span class="ii">📱</span><input type="tel" id="mobile" maxlength="10" placeholder="10 अंकों का नंबर" oninput="prog()" /></div>
+                    </div>
+
+                    <div class="fld">
+                        <label class="lbl">जिला / District <span class="req">*</span></label>
+                        <div class="iw"><span class="ii">🏙️</span><input type="text" id="gaon" placeholder="जिले का नाम लिखें" oninput="prog()" /></div>
+                    </div>
+                    <div class="fld">
+                        <label class="lbl">राज्य / State <span class="req">*</span></label>
+                        <div class="iw"><span class="ii">🗺️</span>
+                            <select id="tehsil" onchange="prog()">
+                                <option value="" disabled selected>— राज्य चुनें —</option>
+                                <option>उत्तर प्रदेश</option>
+                                <option>उत्तराखंड</option>
+                                <option>दिल्ली</option>
+                                <option>हरियाणा</option>
+                                <option>राजस्थान</option>
+                                <option>मध्य प्रदेश</option>
+                                <option>बिहार</option>
+                                <option>अन्य</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="fld">
+                        <label class="lbl">पूरा पता <span class="req">*</span></label>
+                        <div class="iw ta"><span class="ii">🏠</span><textarea id="pata" placeholder="मकान नं., गली, मोहल्ला / गाँव का नाम..." oninput="prog()"></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEC 2 -->
+            <div class="sec">
+                <div class="sec-head">
+                    <div class="sec-ico ico-gold">👨‍👩‍👦</div>
+                    <div>
+                        <div class="sec-title">अभिभावक की जानकारी</div>
+                        <div class="sec-sub">Parent / Guardian Details</div>
+                    </div>
+                </div>
+                <div class="g2">
+                    <div class="fld s2">
+                        <label class="lbl">पिता का नाम <span class="req">*</span></label>
+                        <div class="iw"><span class="ii">👨</span><input type="text" id="pita" placeholder="पिता का पूरा नाम" oninput="prog()" /></div>
+                    </div>
+                    <div class="fld">
+                        <label class="lbl">अभिभावक का व्यवसाय <span class="req">*</span></label>
+                        <div class="iw"><span class="ii">💼</span>
+                            <select id="occ" onchange="prog()">
+                                <option value="" disabled selected>— चुनें —</option>
+                                <option>किसान (Farmer)</option>
+                                <option>व्यापारी (Businessman)</option>
+                                <option>सरकारी नौकरी</option>
+                                <option>निजी नौकरी</option>
+                                <option>मजदूर (Labour)</option>
+                                <option>अन्य</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="fld">
+                        <label class="lbl">वार्षिक आय / Annual Income <span class="req">*</span></label>
+                        <div class="iw"><span class="ii">💰</span>
+                            <select id="income" onchange="prog()">
+                                <option value="" disabled selected>— आय चुनें —</option>
+                                <option>₹1 लाख से कम</option>
+                                <option>₹1 लाख – ₹2 लाख</option>
+                                <option>₹2 लाख – ₹3 लाख</option>
+                                <option>₹3 लाख – ₹5 लाख</option>
+                                <option>₹5 लाख से अधिक</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEC 3 -->
+            <div class="sec">
+                <div class="sec-head">
+                    <div class="sec-ico ico-navy">🎓</div>
+                    <div>
+                        <div class="sec-title">शिक्षा एवं अंक विवरण</div>
+                        <div class="sec-sub">Education & Marks Details</div>
+                    </div>
+                </div>
+                <div class="g2">
+                    <div class="fld">
+                        <label class="lbl">Stream / विषय धारा <span class="req">*</span></label>
+                        <div class="iw"><span class="ii">📐</span>
+                            <select id="stream" onchange="prog()">
+                                <option value="" disabled selected>— Stream चुनें —</option>
+                                <option>Science (PCM) — भौतिक, रसायन, गणित</option>
+                                <option>Science (PCB) — भौतिक, रसायन, जीव</option>
+                                <option>Commerce — वाणिज्य</option>
+                                <option>Arts / Humanities — कला</option>
+                                <option>General — सामान्य</option>
+                                <option>अन्य / Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="fld">
+                        <label class="lbl">बोर्ड / विश्वविद्यालय <span class="req">*</span></label>
+                        <div class="iw"><span class="ii">🏛️</span>
+                            <select id="board" onchange="prog()">
+                                <option value="" disabled selected>— बोर्ड चुनें —</option>
+                                <option>CBSE</option>
+                                <option>ICSE</option>
+                                <option>State Board — राज्य बोर्ड</option>
+                                <option>अन्य / Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="fld s2 cls12-field" id="subjectField">
+                        <label class="lbl">मुख्य विषय / Subject <span class="req">*</span></label>
+                        <div class="iw"><span class="ii">📖</span>
+                            <input type="text" id="subject" placeholder="जैसे: Physics, Chemistry, Math / History, Geography..." oninput="prog()" />
+                        </div>
+                    </div>
+                    <div class="fld s2">
+                        <label class="lbl">अंक विवरण <span class="req">*</span></label>
+                        <div class="marks-row">
+                            <div class="fld">
+                                <label class="lbl" style="font-size:.7rem;">प्राप्त अंक <span class="req">*</span></label>
+                                <div class="iw"><span class="ii">✅</span><input type="number" id="gotMarks" placeholder="जैसे: 425" min="0" oninput="calcPct()" /></div>
+                            </div>
+                            <div class="fld">
+                                <label class="lbl" style="font-size:.7rem;">कुल अंक <span class="req">*</span></label>
+                                <div class="iw"><span class="ii">📊</span><input type="number" id="totMarks" placeholder="जैसे: 700" min="1" oninput="calcPct()" /></div>
+                            </div>
+                            <div>
+                                <label class="lbl" style="font-size:.7rem;">प्रतिशत (स्वतः)</label>
+                                <div class="marks-result" id="pctBox">
+                                    <div>
+                                        <div class="pct-label">Percentage</div>
+                                        <div class="pct-val" id="pctVal">—</div>
+                                    </div>
+                                    <span id="pctEmoji" style="font-size:1.7rem;">🎓</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fld s2">
+                        <label class="lbl">मार्कशीट फोटो <span style="font-size:.72rem;font-weight:600;color:#16a34a;margin-left:6px;">(Optional)</span> <span style="font-size:.68rem;font-weight:400;color:var(--muted);margin-left:4px;">अधिकतम 3MB · JPG / PNG / PDF</span></label>
+                        <div class="uzone" id="mz">
+                            <input type="file" id="mf" accept="image/*,.pdf" onchange="prevFile(event,'mz','mpb','mpi','mpname','mpsize')" />
+                            <span class="u-ico">📄</span>
+                            <div class="u-title">मार्कशीट अपलोड करें</div>
+                            <div class="u-sub"><span>JPG</span><span>PNG</span><span>PDF</span> — क्लिक करें या खींचकर छोड़ें</div>
+                            <div class="prev-box" id="mpb">
+                                <img id="mpi" src="" alt="Marksheet" />
+                                <div class="prev-info">
+                                    <div class="pname" id="mpname">—</div>
+                                    <div class="psize" id="mpsize">—</div>
+                                    <div class="pok">✓ &nbsp;मार्कशीट अपलोड हुई</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEC 4 -->
+            <div class="sec">
+                <div class="sec-head">
+                    <div class="sec-ico ico-blue">📜</div>
+                    <div>
+                        <div class="sec-title">घोषणा एवं सहमति</div>
+                        <div class="sec-sub">Declaration & Consent</div>
+                    </div>
+                </div>
+                <div class="decl">
+                    <div class="decl-head">📋 &nbsp;आवेदक की घोषणा</div>
+                    <p>मैं एतद्द्वारा घोषणा करता/करती हूँ कि इस आवेदन में दी गई समस्त जानकारी तथा प्रस्तुत दस्तावेज
+                        पूर्णतः सत्य एवं सही हैं। यदि कोई भी जानकारी असत्य पाई जाती है तो <strong>Rosemine Educational &
+                            Charitable Trust</strong> मेरा पुरस्कार रद्द करने का अधिकार रखती है।</p>
+                </div>
+                <div class="chk-row">
+                    <input type="checkbox" id="agree" onchange="prog()" />
+                    <label for="agree">मैं उपरोक्त घोषणा से पूर्णतः सहमत हूँ और सभी शर्तें एवं नियम स्वीकार करता/करती हूँ।</label>
+                </div>
+            </div>
+
+
+            <div class="sub-area">
+                <button class="btn-sub" onclick="submitForm()">
+                    आवेदन जमा करें &nbsp;<span class="arr">→</span>
+                </button>
+                <div class="sub-note">🔒 आपकी जानकारी पूर्णतः सुरक्षित है &nbsp;·&nbsp; Rosemine Educational & Charitable Trust</div>
+            </div>
+        </div>
+
+        <div class="pg-footer">
+            <div class="ft-left">© 2025-26 Rosemine Educational & Charitable Trust &nbsp;·&nbsp; सर्वाधिकार सुरक्षित</div>
+            <div class="ft-right">
+                <div class="fc" style="background:#cc0000"></div>
+                <div class="fc" style="background:rgba(255,215,0,.5)"></div>
+                <div class="fc" style="background:#001f5b"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="mbox">
+            <span class="m-ico">🎓</span>
+            <div class="m-title">आवेदन सफल!</div>
+            <p class="m-msg">
+                आपका आवेदन <strong>Rosemine Educational & Charitable Trust</strong> में सफलतापूर्वक जमा हो गया है।<br /><br />
+                हमारी टीम जल्द ही आपसे संपर्क करेगी।<br />
+                📍 शामली बस स्टैंड, काली नदी के पास, मुजफ्फरनगर
+            </p>
+            <div class="m-ref" id="mref">संदर्भ संख्या: ROSE-2025-000000</div><br />
+
+            <!-- ✅ WhatsApp Button — opens app on mobile, web on desktop -->
+            <button class="wa-btn-style" id="waBtn" onclick="openWhatsApp()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#fff">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                WhatsApp पर आवेदन भेजें
+            </button>
+            <button class="m-close" onclick="document.getElementById('modal').classList.remove('show')">✓ &nbsp;ठीक है</button>
+        </div>
+    </div>
+
+    <script>
+        var state = { gender: '', div: '', selectedClass: 10, waMsg: '', donateAmt: '' };
+        function selAmt(el, amt) {
+            document.querySelectorAll('.amt-btn').forEach(function(b) { b.classList.remove('selected'); });
+            el.classList.add('selected');
+            state.donateAmt = amt;
+        }
+
+        // ✅ Aapka WhatsApp number (country code ke saath, bina +)
+        var WA_NUMBER = '917906861189';
+
+        document.getElementById('kaksha').value = 'Class 10 (Matric)';
+
+        // ✅ IMPROVED WhatsApp opener
+        // Mobile pe: WhatsApp app seedha khulega
+        // Desktop pe: WhatsApp Web tab mein khulega
+        function openWhatsApp() {
+            var encoded = encodeURIComponent(state.waMsg);
+            var isMobile = /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+
+            if (isMobile) {
+                // Mobile: app link use karo — seedha WhatsApp app kholega
+                window.location.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encoded;
+            } else {
+                // Desktop: WhatsApp Web new tab mein kholega
+                window.open('https://web.whatsapp.com/send?phone=' + WA_NUMBER + '&text=' + encoded, '_blank');
+            }
+        }
+
+        function switchClass(cls) {
+            state.selectedClass = cls;
+            document.getElementById('tab10').classList.toggle('active', cls === 10);
+            document.getElementById('tab12').classList.toggle('active', cls === 12);
+            document.getElementById('tabUG').classList.toggle('active', cls === 'UG');
+            if (cls === 10) {
+                document.getElementById('kaksha').value = 'Class 10 (Matric)';
+                document.querySelectorAll('.cls12-field').forEach(function(el) { el.classList.remove('show'); });
+            } else if (cls === 12) {
+                document.getElementById('kaksha').value = 'Class 12 (Intermediate)';
+                document.querySelectorAll('.cls12-field').forEach(function(el) { el.classList.add('show'); });
+            } else {
+                document.getElementById('kaksha').value = 'UG (Under Graduate)';
+                document.querySelectorAll('.cls12-field').forEach(function(el) { el.classList.add('show'); });
+            }
+            prog();
+        }
+
+        function toggleSeeMore() {
+            var btn = document.getElementById('seeMoreBtn');
+            var content = document.getElementById('seeMoreContent');
+            btn.classList.toggle('open');
+            content.classList.toggle('show');
+            btn.innerHTML = btn.classList.contains('open')
+                ? 'कम करें <span class="arrow">▼</span>'
+                : 'और जानें <span class="arrow">▼</span>';
+        }
+
+        function selR(grpId, el, key, val) {
+            document.querySelectorAll('#' + grpId + ' .radio-btn').forEach(function(b) { b.classList.remove('selected'); });
+            el.classList.add('selected');
+            state[key] = val;
+            document.getElementById(key).value = val;
+            prog();
+        }
+
+        function calcPct() {
+            var got = parseFloat(document.getElementById('gotMarks').value);
+            var tot = parseFloat(document.getElementById('totMarks').value);
+            var box = document.getElementById('pctBox');
+            var val = document.getElementById('pctVal');
+            var emoji = document.getElementById('pctEmoji');
+            if (!isNaN(got) && !isNaN(tot) && tot > 0) {
+                var pct = ((got / tot) * 100).toFixed(2);
+                val.textContent = pct + '%';
+                box.className = 'marks-result ' + (pct >= 50 ? 'good' : 'fail');
+                emoji.textContent = pct >= 75 ? '🥇' : pct >= 60 ? '🥈' : pct >= 50 ? '🥉' : '❌';
+            } else {
+                val.textContent = '—'; box.className = 'marks-result'; emoji.textContent = '🎓';
+            }
+            prog();
+        }
+
+        function prevFile(e, zoneId, pbId, piId, pnId, psId) {
+            var f = e.target.files[0]; if (!f) return;
+            var r = new FileReader();
+            r.onload = function(ev) {
+                var img = document.getElementById(piId);
+                img.src = f.type.startsWith('image/') ? ev.target.result : 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="100"><rect width="80" height="100" fill="%23dce6ff" rx="6"/><text x="40" y="55" text-anchor="middle" font-size="28">📄</text></svg>';
+                img.style.display = 'block';
+                document.getElementById(pnId).textContent = f.name;
+                document.getElementById(psId).textContent = (f.size / 1024).toFixed(1) + ' KB';
+                document.getElementById(pbId).style.display = 'flex';
+                var z = document.getElementById(zoneId);
+                z.querySelector('.u-ico').style.display = 'none';
+                z.querySelector('.u-title').style.display = 'none';
+                z.querySelector('.u-sub').style.display = 'none';
+            };
+            r.readAsDataURL(f); prog();
+        }
+
+        function prog() {
+            var subjectVal = (state.selectedClass === 12 || state.selectedClass === 'UG') ? document.getElementById('subject').value.trim() : 'ok';
+            var vals = [
+                document.getElementById('naam').value.trim(),       // 0
+                document.getElementById('dob').value,               // 1
+                document.getElementById('mobile').value.trim(),     // 2
+                document.getElementById('gaon').value.trim(),       // 3
+                document.getElementById('pata').value.trim(),       // 4
+                document.getElementById('pita').value.trim(),       // 5
+                document.getElementById('board').value,             // 6
+                document.getElementById('gotMarks').value,          // 7
+                document.getElementById('totMarks').value,          // 8
+                subjectVal,                                          // 9
+                document.getElementById('agree').checked ? 'x' : '' // 10
+            ];
+            var filled = vals.filter(function(v) { return v && v.length > 0; }).length;
+            document.getElementById('pf').style.width = Math.round((filled / vals.length) * 100) + '%';
+            var s = [
+                !!(vals[0] && vals[1] && vals[2] && vals[3] && vals[4]),
+                !!(vals[5]),
+                !!(vals[6] && vals[7] && vals[8]),
+                !!(vals[10])
+            ];
+            ['st1', 'st2', 'st3', 'st4'].forEach(function(id, i) {
+                var el = document.getElementById(id);
+                var active = i === s.filter(Boolean).length && !s[i];
+                el.className = 'st' + (s[i] ? ' done' : active ? ' active' : '');
+                el.querySelector('.st-dot').textContent = s[i] ? '✓' : (i + 1);
+            });
+            ['sl1', 'sl2', 'sl3'].forEach(function(id, i) {
+                document.getElementById(id).className = 'stl' + (s[i] ? ' done' : '');
+            });
+        }
+
+        function submitForm() {
+            var naam = document.getElementById('naam').value.trim();
+            var dob = document.getElementById('dob').value;
+            var mobile = document.getElementById('mobile').value.trim();
+            var gaon = document.getElementById('gaon').value.trim();
+            var pata = document.getElementById('pata').value.trim();
+            var pita = document.getElementById('pita').value.trim();
+            var board = document.getElementById('board').value;
+            var got = document.getElementById('gotMarks').value;
+            var tot = document.getElementById('totMarks').value;
+            var agree = document.getElementById('agree').checked;
+            var subject = document.getElementById('subject').value.trim();
+
+            if (!naam || !dob || !mobile || !gaon || !pata) { alert('⚠️ छात्र की सभी अनिवार्य (*) जानकारी भरें।'); return; }
+            if (!/^\d{10}$/.test(mobile)) { alert('⚠️ मोबाइल नंबर 10 अंकों का होना चाहिए।'); return; }
+            if (!pita) { alert('⚠️ पिता का नाम भरें।'); return; }
+            if (!board || !got || !tot) { alert('⚠️ शिक्षा और अंक की सभी अनिवार्य जानकारी भरें।'); return; }
+            if (state.selectedClass === 12 && !subject) { alert('⚠️ Class 12 के लिए मुख्य विषय भरें।'); return; }
+            if (state.selectedClass === 'UG' && !subject) { alert('⚠️ UG के लिए मुख्य विषय / Course भरें।'); return; }
+            var pct = ((parseFloat(got) / parseFloat(tot)) * 100).toFixed(2);
+            if (parseFloat(pct) < 50) { alert('⚠️ खेद है! Counselling के लिए न्यूनतम 50% अंक आवश्यक हैं।\nआपके अंक: ' + pct + '%'); return; }
+            if (!agree) { alert('⚠️ कृपया घोषणा से सहमत हों।'); return; }
+
+            var ref = 'ROSE-' + new Date().getFullYear() + '-' + Math.floor(100000 + Math.random() * 900000);
+            document.getElementById('mref').textContent = 'संदर्भ संख्या: ' + ref;
+
+            var tehsil = document.getElementById('tehsil').value || '—';
+            var stream = document.getElementById('stream').value || '—';
+            var occ = document.getElementById('occ').value || '—';
+            var income = document.getElementById('income').value || '—';
+            var kaksha = state.selectedClass === 10 ? 'Class 10 (Matric)' : state.selectedClass === 12 ? 'Class 12 (Intermediate)' : 'UG (Under Graduate)';
+
+            // ✅ WhatsApp message — aapke number pe aayega
+            state.waMsg =
+                '🎓 *नया आवेदन — Education Career Counselling*\n' +
+                '*Rosemine Educational Trust*\n' +
+                '━━━━━━━━━━━━━━━━━━━━\n' +
+                '📋 *संदर्भ संख्या:* ' + ref + '\n\n' +
+                '👤 *छात्र की जानकारी*\n' +
+                '• नाम: ' + naam + '\n' +
+                '• जन्म तिथि: ' + dob + '\n' +
+                '• मोबाइल: ' + mobile + '\n' +
+                '• जिला: ' + gaon + ' — राज्य: ' + tehsil + '\n' +
+                '• पता: ' + pata + '\n\n' +
+                '👨 *अभिभावक की जानकारी*\n' +
+                '• पिता: ' + pita + '\n' +
+                '• व्यवसाय: ' + occ + '\n' +
+                '• वार्षिक आय: ' + income + '\n\n' +
+                '🎓 *शिक्षा एवं अंक*\n' +
+                '• कक्षा: ' + kaksha + '\n' +
+                '• Stream: ' + stream + '\n' +
+                '• बोर्ड: ' + board + '\n' +
+                (subject ? '• विषय: ' + subject + '\n' : '') +
+                '• प्राप्त अंक: ' + got + ' / ' + tot + '\n' +
+                '• प्रतिशत: ' + pct + '%\n' +
+                '━━━━━━━━━━━━━━━━━━━━\n' +
+                '✅ आवेदन सफलतापूर्वक जमा हुआ' +
+                (state.donateAmt ? '\n💚 योगदान राशि: ' + state.donateAmt : '');
+
+            document.getElementById('modal').classList.add('show');
+
+            // ✅ Auto WhatsApp open — seedha data bhejega
+            setTimeout(function() {
+                var encoded = encodeURIComponent(state.waMsg);
+                var isMobile = /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+                if (isMobile) {
+                    window.location.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encoded;
+                } else {
+                    window.open('https://web.whatsapp.com/send?phone=' + WA_NUMBER + '&text=' + encoded, '_blank');
+                }
+            }, 800);
+        }
+    </script>
+</body>
+</html>
